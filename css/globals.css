@@ -1,0 +1,268 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:500,700,400|Poppins:400");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/661a4819f62ec345fe8a1428.661a482e6950362dd9c39e0c.wz0zqlB.hcp.png");
+
+@font-face {
+  font-family: "Garamond-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Garamond Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Garamond-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Garamond.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-row {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  margin-right: 7.0px;
+  margin-top: -109px;
+  min-width: 1167px;
+}
+
+.image-1 {
+  height: 60px;
+  margin-bottom: 39px;
+  object-fit: cover;
+  width: 60px;
+}
+
+.overlap-group5 {
+  height: 256px;
+  position: relative;
+  width: 406px;
+}
+
+.rectangle-6 {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 26.96%, rgba(132, 0, 41, 0.19) 100%);
+  border-radius: 0px 0px 60px 0px;
+  height: 256px;
+  left: 190px;
+  position: absolute;
+  top: 0;
+  width: 216px;
+}
+
+.university-of-louisiana-at-monroe {
+  color: var(--paprika);
+  font-family: var(--font-family-garamond-regular);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 156px;
+  white-space: nowrap;
+  width: 380px;
+}
+
+.accessibility-site-map-help-exit {
+  align-self: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 295px;
+  margin-top: 119.0px;
+  min-height: 17px;
+  min-width: 291px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ellipse-2 {
+  height: 80px;
+  margin-bottom: 29px;
+  margin-left: 35px;
+  object-fit: cover;
+  width: 80px;
+}
+
+.email {
+  background-color: transparent;
+  border: 0;
+  height: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  width: 534px;
+}
+
+.email::placeholder {
+  color: #00000099;
+}
+
+.cwid-1 {
+  background-color: transparent;
+  border: 0;
+  height: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  width: 534px;
+}
+
+.cwid-1::placeholder {
+  color: #00000099;
+}
+
+.please-provide-the-d {
+  align-self: flex-end;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 23px;
+  min-height: 66px;
+  min-width: 1115px;
+}
+
+.details {
+  background-color: transparent;
+  border: 0;
+  height: 212px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  width: 982px;
+}
+
+.details::placeholder {
+  color: #00000099;
+}
+
+.mdicamera {
+  height: 200px;
+  width: 200px;
+}
+
+.group-12 {
+  min-width: 395px;
+}
+
+.overlap-group-1 {
+  height: 53px;
+  position: relative;
+  width: 393px;
+}
+
+.rectangle-31 {
+  background-color: var(--paprika);
+  border-radius: 13px;
+  height: 52px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 341px;
+}
+
+.submit {
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  left: 110px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 283px;
+}
+
+.group {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+}
+
+.span0-w9epxD {
+  font-style: normal;
+}
+
+.span0-AXCxJe {
+  font-style: normal;
+}
+
+.span1-AXCxJe {
+  font-family: 'Garamond-Bold', Helvetica;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.span2-AXCxJe {
+  font-style: normal;
+}
+
+.span3-AXCxJe {
+  font-family: 'Garamond-Bold', Helvetica;
+  font-style: normal;
+  font-weight: 700;
+}

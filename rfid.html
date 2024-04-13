@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Access Card</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('thumbnail_image.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .card-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus {
+            outline: none;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 8px rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #status-message {
+            color: #000000;
+            background-color: #4F8A10;
+            border: 1px solid #f7f7f7;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .success {
+            color: #4F8A10;
+            background-color: #DFF2BF;
+            border-color: #4F8A10;
+        }
+
+        #clock, #logo {
+            position: absolute;
+            top: 10px;
+            font-size: 18px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #clock {
+            right: 10px;
+        }
+
+        #logo {
+            right: 140px;
+            height: 40px;
+        }
+
+        #logo img {
+            height: 100%;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+    <div id="logo"><img src="2.png" alt="School Logo"></div>
+    <div class="card-container">
+        <h1>Virtual Card</h1>
+        <input type="text" id="Name" placeholder="Enter your Name">
+        <input type="text" id="cwid" placeholder="Enter your CWID">
+        <input type="email" id="email" placeholder="Enter your ULM Email">
+        <button onclick="submitForm()">Get card on Email</button>
+        <div id="status-message"></div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("dIt0oyhSFa5oc6_2F"); // Your EmailJS user ID
+        })();
+
+        function submitForm() {
+    const name = document.getElementById('Name').value;
+    const cwid = document.getElementById('cwid').value;
+    const email = document.getElementById('email').value;
+    const button = document.querySelector('button');
+    const statusMessage = document.getElementById('status-message');
+
+    if (name && cwid.length === 8 && validateEmail(email)) {
+        button.disabled = true; // Disable the button to prevent multiple submissions
+        emailjs.send("service_tk1vpsm", "template_1fw0lmy", {
+            to_name: name,
+            to_email: email,
+            to_cwid:cwid,
+            message: `Your virtual card is being prepared and will be sent to your email within the next 2 days.`
+        })
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            statusMessage.className = 'success';
+            statusMessage.textContent = "Email sent successfully!\nPlease check your email: " + email + " and add the card to your wallet.";
+            statusMessage.style.display = 'block';
+            button.disabled = false; // Re-enable the button after the operation
+        }, function(error) {
+            console.error('FAILED...', error);
+            statusMessage.textContent = "Failed to send email. Please try again. Error: " + JSON.stringify(error);
+            statusMessage.style.display = 'block';
+            button.disabled = false; // Re-enable the button after failure
+        });
+    } else {
+        statusMessage.className = '';
+        statusMessage.textContent = "Please enter a valid name, 8-digit CWID, and a valid email.";
+        statusMessage.style.display = 'block';
+    }
+}
+
+
+        function validateEmail(email) {
+            return /\S+@\S+\.\S+/.test(email);
+        }
+
+        function updateClock() {
+            const now = new Date();
+            const hours = ('0' + now.getHours()).slice(-2);
+            const minutes = ('0' + now.getMinutes()).slice(-2);
+            const seconds = ('0' + now.getSeconds()).slice(-2);
+            document.getElementById('clock').innerText = hours + ':' + minutes + ':' + seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initialize the clock immediately on load
+    </script>
+</body>
+</html>

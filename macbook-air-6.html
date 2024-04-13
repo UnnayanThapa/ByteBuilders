@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1280, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/macbook-air-6.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  </head>
+  <body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="macbook-air-6" />
+    <div class="container-center-horizontal">
+      <form class="macbook-air-6 screen" name="form7" action="form7" method="post">
+        <div class="flex-row">
+          <img class="image-1" src="img/image-1-1@2x.png" alt="image 1" />
+          <div class="overlap-group5">
+            <div class="rectangle-6"></div>
+            <p class="university-of-louisiana-at-monroe">University of Louisiana at Monroe</p>
+          </div>
+          <p class="accessibility-site-map-help-exit garamond-regular-normal-paprika-15px">
+            <span class="garamond-regular-normal-paprika-15px">ACCESSIBILITY | SITE MAP | HELP | EXIT</span>
+          </p>
+          <img class="ellipse-2" src="img/ellipse-2@2x.png" alt="Ellipse 2" />
+        </div>
+        <h1 class="title">Appeal Form</h1>
+        <div class="warhawks-email-address ebgaramond-medium-white-25px">
+          <span class="ebgaramond-medium-black-25px">Warhawks Email Address</span
+          ><span class="ebgaramond-medium-red-25px">*</span>
+        </div>
+        <div class="overlap-group">
+          <input class="email poppins-normal-black-15px" name="email" placeholder="email" type="text" required />
+        </div>
+        <div class="cwid ebgaramond-medium-white-25px">
+          <span class="ebgaramond-medium-black-25px">CWID</span><span class="ebgaramond-medium-red-25px">*</span>
+        </div>
+        <div class="overlap-group3">
+          <input class="cwid-1 poppins-normal-black-15px" name="cwid" placeholder="CWID" type="text" required />
+        </div>
+        <div class="macbook-air-6-item ebgaramond-medium-white-25px">
+          <span class="ebgaramond-medium-black-25px">Date of loss:(MM/DD/YYYY):</span
+          ><span class="ebgaramond-medium-red-25px">*</span>
+        </div>
+        <div class="overlap-group">
+          <div class="date-of-lossmmddyyyy poppins-normal-black-15px">Date of loss:(MM/DD/YYYY):*</div>
+        </div>
+        <div class="item-validation ebgaramond-medium-black-25px">Item Validation:</div>
+        <p class="please-provide-the-d ebgaramond-medium-white-25px">
+          <span class="ebgaramond-medium-black-25px"
+            >Please provide the details about where the item was lost and any unique characteristics that can
+            significantly aid in<br />aid in identifying the item and prove its validity?</span
+          ><span class="ebgaramond-medium-red-25px">*</span>
+        </p>
+        <div class="overlap-group4">
+          <textarea
+            class="details poppins-normal-black-15px"
+            name="details"
+            placeholder="details"
+            type="text"
+            required
+          ></textarea>
+        </div>
+        <p class="macbook-air-6-item ebgaramond-medium-black-25px">Upload an image with the Item(optional)</p>
+        <div class="overlap-group6"><img class="mdicamera" src="img/mdi-camera.svg" alt="mdi:camera" /></div>
+        <a href="javascript:SubmitForm('form7')" class="align-self-flex-end">
+          <div class="group-13 group">
+            <a href="javascript:SubmitForm('form7')" onclick="window.event.stopPropagation()">
+              <div class="group-12 group">
+                <div class="overlap-group-1">
+                  <div class="rectangle-31"></div>
+                  <a href="macbook-air-7.html" onclick="window.event.stopPropagation()"
+                    ><div class="submit">Submit</div>
+                  </a>
+                </div>
+              </div></a
+            >
+          </div></a
+        >
+        <div class="release-8922 garamond-regular-normal-black-12px">RELEASE: 8.9.2.2</div>
+        <p class="x2023-ellucian-comp garamond-regular-normal-black-12px">
+          © 2023 Ellucian Company L.P. and its affiliates.<br />This software contains confidential and proprietary
+          information of Ellucian or its subsidiaries.<br />Use of this software is limited to Ellucian licensees, and
+          is subject to the terms and conditions of one or more written license agreements between Ellucian and such
+          licensees.
+        </p>
+      </form>
+    </div>
+    <script>
+      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
+    </script>
+  </body>
+</html>

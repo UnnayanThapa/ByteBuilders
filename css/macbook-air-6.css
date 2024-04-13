@@ -1,0 +1,139 @@
+/* screen - macbook-air-6 */
+
+.macbook-air-6 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2112px;
+  padding: 0 39px;
+  width: 1280px;
+}
+
+.macbook-air-6 .title {
+  color: var(--black);
+  font-family: var(--font-family-eb_garamond);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 74px;
+  margin-top: 96px;
+  min-height: 59px;
+}
+
+.macbook-air-6 .warhawks-email-address {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 87px;
+  margin-top: 66px;
+  min-height: 33px;
+}
+
+.macbook-air-6 .overlap-group {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: var(--black);
+  display: flex;
+  height: 43px;
+  margin-right: 10.0px;
+  margin-top: 24px;
+  min-width: 1018px;
+  padding: 9px 23px;
+}
+
+.macbook-air-6 .cwid {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 87px;
+  margin-top: 26px;
+  min-height: 33px;
+}
+
+.macbook-air-6 .overlap-group3 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: var(--black);
+  display: flex;
+  height: 43px;
+  margin-right: 10.0px;
+  margin-top: 20px;
+  min-width: 1018px;
+  padding: 9px 23px;
+}
+
+.macbook-air-6 .macbook-air-6-item {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 87px;
+  margin-top: 22px;
+  min-height: 33px;
+}
+
+.macbook-air-6 .date-of-lossmmddyyyy {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 21px;
+  width: 534px;
+}
+
+.macbook-air-6 .item-validation {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 87px;
+  margin-top: 22px;
+  min-height: 66px;
+}
+
+.macbook-air-6 .overlap-group4 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: var(--black);
+  display: flex;
+  height: 250px;
+  margin-right: 10.0px;
+  margin-top: 24px;
+  min-width: 1018px;
+  padding: 18px;
+}
+
+.macbook-air-6 .overlap-group6 {
+  align-items: flex-start;
+  align-self: center;
+  border: 1px solid;
+  border-color: var(--black);
+  display: flex;
+  height: 519px;
+  margin-right: 10.0px;
+  margin-top: 24px;
+  min-width: 1018px;
+  padding: 154px 408px;
+}
+
+.macbook-air-6 .group-13 {
+  align-self: flex-end;
+  margin-right: 17.5px;
+  margin-top: 50px;
+  min-width: 393px;
+}
+
+.macbook-air-6 .release-8922 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 74px;
+  margin-top: 118px;
+  min-height: 14px;
+  white-space: nowrap;
+}
+
+.macbook-air-6 .x2023-ellucian-comp {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 74px;
+  margin-top: 9px;
+  min-height: 56px;
+  width: 442px;
+}

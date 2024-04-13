@@ -1,0 +1,64 @@
+:root { 
+  --black: #000000;
+  --black-2: #000000ba;
+  --paprika: #840029;
+  --red: #ff0000;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 25px;
+  --font-size-s: 15px;
+  --font-size-xl: 35px;
+  --font-size-xs: 12px;
+  --font-size-xxl: 45px;
+ 
+  --font-family-eb_garamond: "EB Garamond", Helvetica;
+  --font-family-garamond-regular: "Garamond-Regular", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.ebgaramond-medium-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-eb_garamond);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ebgaramond-medium-white-25px {
+  font-family: var(--font-family-eb_garamond);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ebgaramond-medium-red-25px {
+  color: var(--red);
+  font-family: var(--font-family-eb_garamond);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-normal-black-15px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.garamond-regular-normal-paprika-15px {
+  color: var(--paprika);
+  font-family: var(--font-family-garamond-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.garamond-regular-normal-black-12px {
+  color: var(--black-2);
+  font-family: var(--font-family-garamond-regular);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
