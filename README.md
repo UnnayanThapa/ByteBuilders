@@ -1,6 +1,6 @@
 # Warhawks Project
-Role: Team Member, Web Developer
-Technologies Used: HTML, CSS, JavaScript, Node.js, RFID
+- Role: Team Lead, Web Application Development
+- Technologies Used: HTML, CSS, JavaScript, Node.js, RFID
 
 As part of a collaborative team, I contributed to the development of the Warhawks web application for the University of Louisiana at Monroe (ULM). The project aimed to provide a seamless and engaging web experience for ULM students and staff. Key features of the project included multiple HTML pages representing various sections of the application and RFID functionality for student ID management or access control.
 
