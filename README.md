@@ -10,30 +10,31 @@ As part of a collaborative team, I contributed to the development of the Warhawk
 - Backend Development: Implemented server-side logic using Node.js in the server.js file, handling data requests and communications between the client and server.
 - Collaboration: Worked closely with a cross-functional team, ensuring efficient feature integration and meeting project deadlines.
 
-## Repository Structure:
-Warhawks/
-│
-├── .vscode/
-├── css/
-├── fonts/
-├── img/
-│
-├── macbook-air-1.html
-├── macbook-air-2.html
-├── macbook-air-3.html
-├── macbook-air-4.html
-├── macbook-air-5.html
-├── macbook-air-6.html
-├── macbook-air-7.html
-├── rfid.html
-│
-├── server.js
-├── 2.png
-├── thumbnail_image.png
-│
-├── .DS_Store
-└── README.md
+## Getting Started with the Warhawks Project
 
+To set up and run the project locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/prashansapkota/Warhawks.git 
+
+```
+2. Navigate to the project directory:
+```bash
+cd Warhawks
+```
+3. Install dependencies:
+```bash
+npm install
+```
+4. Start the server:
+```bash
+node server.js
+```
+
+
+## Repository Structure:
 ## Frontend Assets:
 - HTML files for multiple views (macbook-air-*.html).
 - css/ directory for styling.
